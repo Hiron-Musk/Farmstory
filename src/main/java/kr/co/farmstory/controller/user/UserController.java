@@ -18,7 +18,7 @@ public class UserController {
 
 //    @PostMapping("/login")
 //    public String login() {
-//        return "redirct:/index";
+//        return "redirect:/index";
 //    }
 
     @GetMapping("/register")
