@@ -11,9 +11,8 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class TermsDTO {
-    private String terms;
-    private String privacy;
-    private String sms;
-
+public class Categories {
+    private int cateNo;
+    private String cateName;
+    private int catNo;
 }
