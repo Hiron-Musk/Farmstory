@@ -9,8 +9,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class AdminController {
 
     @GetMapping(value = {"/index", "/"})
-    public String adminIndex() {
+    public String index() {
         return "/admin/index";
+    }
+
+    @GetMapping("/product/register")
+    public String register() {
+        return "/admin/product/register";
     }
 
 }
