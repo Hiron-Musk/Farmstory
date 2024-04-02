@@ -21,10 +21,40 @@ spring:
     datasource:
         driver-class-name: com.mysql.cj.jdbc.Driver
         password: Kjh5823!
-        url: jdbc:mysql://127.0.0.1:3306/farm_story
+        url: jdbc:mysql://127.0.0.1:3306/farmstory
         username: jsa7868
     devtools:
         livereload:
             enabled: true
         restart:
             enabled: false
+
+    mail:
+        host: smtp.gmail.com
+        port: 587
+        username: jsa7868@gmail.com
+        password: pybw goac fyle uwje
+        properties:
+            mail:
+                smtp:
+                    auth: true
+                    timeout: 5000
+                    starttls:
+                        enable: true
+
+    jpa:
+        database: mysql
+        hibernate:
+            ddl-auto: update
+            naming:
+                physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+        properties:
+            hibernate:
+                format_sql: true
+                show_sql: true
+
+    servlet:
+        multipart:
+            location: uploads/
+            max-file-size: 10MB
+
