@@ -24,6 +24,7 @@ spring:
         url: jdbc:mysql://127.0.0.1:3306/farmstory
         username: jsa7868
 
+
     devtools:
         livereload:
             enabled: true
