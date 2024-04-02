@@ -2,6 +2,9 @@ package kr.co.farmstory.dto;
 
 import lombok.*;
 
+/**
+ * 24/4/2수정
+ */
 @Getter
 @Setter
 @ToString
@@ -9,13 +12,18 @@ import lombok.*;
 @NoArgsConstructor
 @Builder
 public class ProductDTO {
-    private int prodId;
+    private int prodNo;
+    private int cateNo;
     private String prodName;
-    private int prodCate;
+    private int prodStock;
     private int prodPrice;
+    private int prodSold;
     private int prodDiscount;
-    private int prodCount;
-    private int prodPoint;
-    private int prodDeliverFee;
+    private Byte image1;
+    private Byte image2;
+    private Byte image3;
+    private int delivery;
+    private String etc;
+    private int point;
 
 }

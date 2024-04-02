@@ -4,17 +4,18 @@ package kr.co.farmstory.dto;
 import lombok.*;
 
 import java.time.LocalDateTime;
-import java.util.Date;
 
+/**
+ * 24/4/2수정
+ */
 @Getter
 @Setter
 @ToString
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class BoardDTO {
+public class ArticleDTO {
     private int no;
-    private String uid;
     private int parent;
     private int comment;
     private String cate;
@@ -22,7 +23,9 @@ public class BoardDTO {
     private String content;
     private int file;
     private int hit;
+    private String writer;
     private String regIp;
     private LocalDateTime rDate;
+    private String nick;
 
 }

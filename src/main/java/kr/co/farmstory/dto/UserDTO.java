@@ -8,6 +8,9 @@ import java.util.Date;
  */
 import lombok.*;
 
+/**
+ * 24/4/2수정
+ */
 @Getter
 @Setter
 @ToString

@@ -20,9 +20,9 @@ spring:
 
     datasource:
         driver-class-name: com.mysql.cj.jdbc.Driver
-        password: Kjh5823!
+        password: 1234
         url: jdbc:mysql://127.0.0.1:3306/farm_story
-        username: jsa7868
+        username: amobu
     devtools:
         livereload:
             enabled: true

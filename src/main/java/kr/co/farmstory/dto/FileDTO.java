@@ -4,6 +4,9 @@ import lombok.*;
 import java.time.LocalDateTime;
 import java.util.Date;
 
+/**
+ * 24/4/2수정
+ */
 @Getter
 @Setter
 @ToString
