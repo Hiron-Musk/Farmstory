@@ -1,8 +1,30 @@
-spring:
-    application:
-        name: farmstory
+logging:
+    file:
+        name: logs/farmstory.log
+    level:
+        jdbc:
+            connection: info
+            resultsettable: info
+            sqlonly: info
+            sqltiming: info
+        root: info
 
 server:
     port: 8080
     servlet:
         context-path: /farmstory
+
+spring:
+    application:
+        name: farmstory
+
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        password: 1234
+        url: jdbc:mysql://127.0.0.1:3306/farm_story
+        username: amobu
+    devtools:
+        livereload:
+            enabled: true
+        restart:
+            enabled: false
