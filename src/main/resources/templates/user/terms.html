@@ -16,6 +16,26 @@
 </head>
 <body>
 <div id="container">
+    <script>
+
+        window.onload = function (){
+
+            const agree1 = document.getElementsByName('agree1')[0];
+            const agree2 = document.getElementsByName('agree2')[0];
+            const btnNext = document.getElementsByClassName('btnNext')[0];
+
+            btnNext.onclick = () => {
+
+                if(agree1.checked && agree2.checked){
+                    return true;
+                }else{
+                    // 필수 동의 알림
+                    alert('이용약관과 개인정보 취급방침에 동의해야 합니다.');
+                    return false;
+                }
+            }
+        }
+    </script>
     <header>
         <a th:href="@{/index}" class="logo"><img th:src="@{/images/logo.png}" alt="로고"/></a>
         <p>
@@ -60,7 +80,7 @@
                         </div>
                         <div class="row mb-3">
                             <div class="col-md-12">
-                                <h6>마켓팅 수신동의</h6>
+                                <h6>마케팅 수신동의</h6>
                                 <textarea class="form-control" rows="10" cols="100" readonly>[[${termsDTO.sms}]]</textarea>
                                 <label class="float-end mt-2"><input type="checkbox" name="agree3">동의합니다.</label>
                             </div>
