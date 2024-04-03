@@ -8,12 +8,12 @@
 <body>
     <div id="container">
         <header>
-            <a href="../index.html" class="logo"><img th:src="@{/images/logo.png}" alt="로고"/></a>
+            <a th:href="@{/}" class="logo"><img th:src="@{/images/logo.png}" alt="로고"/></a>
             <p>
-                <a href="#">HOME |</a>
-                <a href="#">로그인 |</a>
-                <a href="#">회원가입 |</a>
-                <a href="#">고객센터</a>
+                <a th:href="@{/}">HOME |</a>
+                <a th:href="@{/user/login}">로그인 |</a>
+                <a th:href="@{/user/register}">회원가입 |</a>
+                <a th:href="@{/}">고객센터</a>
             </p>
             <img th:src="@{/images/head_txt_img.png}" alt="3만원 이상 무료배송"/>
             
