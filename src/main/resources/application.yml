@@ -9,6 +9,9 @@ logging:
             sqltiming: info
         root: info
 
+mybatis:
+    mapper-locations: classpath:mappers/**/*.xml
+
 server:
     port: 8080
     servlet:
@@ -20,9 +23,9 @@ spring:
 
     datasource:
         driver-class-name: com.mysql.cj.jdbc.Driver
-        password: Kjh5823!
+        password: 1234
         url: jdbc:mysql://127.0.0.1:3306/farmstory
-        username: jsa7868
+        username: gudals
 
 
     devtools:
