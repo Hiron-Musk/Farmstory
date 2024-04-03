@@ -18,11 +18,11 @@
             <img th:src="@{/images/head_txt_img.png}" alt="3만원 이상 무료배송"/>
             
             <ul class="gnb">
-                <li><a href="#">팜스토리소개</a></li>
-                <li><a href="#"><img th:src="@{/images/head_menu_badge.png}" alt="30%"/>장바구니</a></li>
-                <li><a href="#">농작물이야기</a></li>
-                <li><a href="#">이벤트</a></li>
-                <li><a href="#">커뮤니티</a></li>
+                <li><a th:href="@{/introduction/hello}">팜스토리소개</a></li>
+                <li><a th:href="@{/market/list}"><img th:src="@{/images/head_menu_badge.png}" alt="30%"/>장바구니</a></li>
+                <li><a th:href="@{/croptalk/story}">농작물이야기</a></li>
+                <li><a th:href="@{/event/event}">이벤트</a></li>
+                <li><a th:href="@{/community/notice}">커뮤니티</a></li>
             </ul>
         </header>
 
@@ -46,16 +46,54 @@
                     </nav>
 
                     <!-- 내용 시작 -->
-                    <img th:src="@{/images/board_list.png}" alt="">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>NO</th>
+                            <th>제목</th>
+                            <th>글쓴이</th>
+                            <th>날짜</th>
+                            <th>조회</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <!-- 서버에서 받아온 게시글 목록을 Thymeleaf의 반복문을 이용하여 동적으로 추가 -->
+                        <tr th:each="post : ${posts}">
+                            <td th:text="${post.no}"></td>
+                            <td th:text="${post.title}"></td>
+                            <td th:text="${post.writer}"></td>
+                            <td th:text="${post.rdate}"></td>
+                            <td th:text="${post.hit}"></td>
+                        </tr>
+                        </tbody>
+                    </table>
 
+                    <!-- 검색 폼 -->
+                    <form id="searchForm" action="/event/search" method="post">
+                        <!-- 검색 옵션 선택 -->
+                        <select id="searchOption" name="searchOption">
+                            <option value="title">제목</option>
+                            <option value="content">내용</option>
+                            <option value="titleAndContent">제목+내용</option>
+                        </select>
+
+                        <!-- 검색어 입력 -->
+                        <input type="text" id="searchInput" name="searchInput" placeholder="검색어를 입력하세요">
+
+                        <!-- AND와 OR 선택 -->
+                        <label><input type="radio" name="searchType" value="and">AND</label>
+                        <label><input type="radio" name="searchType" value="or">OR</label>
+
+                        <!-- 검색 버튼 -->
+                        <button type="submit">검색</button>
+                    </form>
                     <!-- 내용 끝 -->
-
                 </article>
             </section>
 
+
+
         </div>
-        
-        
         <footer>
             <img th:src="@{/images/footer_logo.png}" alt="로고"/>
             <p>
