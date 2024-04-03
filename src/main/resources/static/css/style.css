@@ -991,6 +991,47 @@ input[type=number]::-webkit-outer-spin-button {
 #sub > .event .lnb > li:nth-child(1) > a {background-image: url('../images/sub_cate4_lnb1.png');}
 #sub > .event .lnb > li:nth-child(1) > a:hover {background-image: url('../images/sub_cate4_lnb1_ov.png');}
 #sub > .event .lnb > li:nth-child(1).on > a {background-image: url('../images/sub_cate4_lnb1_ov.png');}
+/* 테이블 스타일링 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px; /* 테이블 아래 여백 추가 */
+}
+
+/* 테이블 헤더 스타일링 */
+th {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center; /* 헤더 텍스트 가운데 정렬 */
+}
+
+/* 테이블 셀 스타일링 */
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+/* 홀수 행 배경색 설정 */
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+/* 검색 폼 스타일링 */
+#searchForm {
+    margin-bottom: 20px; /* 검색 폼 아래 여백 추가 */
+}
+
+#searchForm select,
+#searchForm input[type="text"],
+#searchForm button {
+    margin-right: 10px; /* 입력 필드와 버튼 사이 여백 추가 */
+    margin-bottom: 10px; /* 입력 필드 아래 여백 추가 */
+}
+
+#searchForm label {
+    margin-right: 5px; /* 라디오 버튼과 라벨 사이 여백 추가 */
+}
 
 /* 커뮤니티 */
 #sub > .community .lnb > li:nth-child(1) > a {background-image: url('../images/sub_cate5_lnb1.png');}
