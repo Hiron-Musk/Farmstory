@@ -13,6 +13,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
 
+/**
+ * 데이터 product 키 다시 수정해야됨
+ */
 @Slf4j
 @Controller
 @RequiredArgsConstructor
@@ -24,7 +27,8 @@ public class AdminController {
     @GetMapping("/product/list")
     public String list(Model model) {
         List<Product> products = service.prodFindAll();
-        model.addAllAttributes(products);
+        log.info("products={}", products);
+        model.addAttribute("products", products);
         return "/admin/product/list";
     }
 
@@ -41,7 +45,8 @@ public class AdminController {
     @PostMapping("/product/register")
     public String register(@ModelAttribute Product product) {
         log.info("product={}", product.toString());
-        return null;
-//        return "reditct:/amdin/product/list";
+        service.save(product);
+//        return null;
+        return "redirect:/admin/product/list";
     }
 }

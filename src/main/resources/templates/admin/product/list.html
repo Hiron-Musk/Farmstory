@@ -48,13 +48,13 @@
                             <th>재고</th>
                             <th>등록일</th>
                         </tr>
-                        <tr>
+                        <tr th:each="product : ${products}">
                             <td><input type="checkbox" name=""/></td>
                             <td><img th:src="@{/images/admin/images/sample_item1.jpg}" class="thumb" alt="샘플1"></td>
-                            <td>사과 500g</td>
-                            <td>과일</td>
-                            <td>4,000원</td>
-                            <td>100</td>
+                            <td th:text="${product.prodName}">사과 500g</td>
+                            <td th:text="${product.cateNo}">과일</td>
+                            <td th:text="${product.prodPrice}">4,000원</td>
+                            <td th:text="${product.prodStock}">100</td>
                             <td>2023-01-01</td>
                         </tr>
                     </table>
