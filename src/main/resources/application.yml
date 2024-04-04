@@ -25,7 +25,7 @@ spring:
         driver-class-name: com.mysql.cj.jdbc.Driver
         password: 1234
         url: jdbc:mysql://127.0.0.1:3306/farmstory
-        username: gudals
+        username: amobu
 
 
     devtools:
@@ -63,3 +63,6 @@ spring:
             location: uploads/
             max-file-size: 10MB
 
+images:
+    upload:
+        path: /src/main/resources/static/uploads/

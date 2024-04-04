@@ -19,9 +19,9 @@ public class ProductDTO {
     private int prodPrice;
     private int prodSold;
     private int prodDiscount;
-    private Byte image1;
-    private Byte image2;
-    private Byte image3;
+    private String image1;
+    private String image2;
+    private String image3;
     private int delivery;
     private String etc;
     private int point;

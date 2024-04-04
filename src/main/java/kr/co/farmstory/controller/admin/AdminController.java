@@ -6,12 +6,11 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * 데이터 product 키 다시 수정해야됨
@@ -43,10 +42,14 @@ public class AdminController {
     }
 
     @PostMapping("/product/register")
-    public String register(@ModelAttribute Product product) {
+    public String register(@ModelAttribute Product product,
+                           @ModelAttribute MultipartFile image1
+                           ) {
         log.info("product={}", product.toString());
-        service.save(product);
-//        return null;
-        return "redirect:/admin/product/list";
+        log.info("image1={}", image1.toString());
+//        log.info("images={}", images);
+//        service.save(product, image1, image2, image3);
+        return null;
+//        return "redirect:/admin/product/list";
     }
 }

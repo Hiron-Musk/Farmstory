@@ -21,9 +21,9 @@ public class Product {
     private Integer prodPrice;
     private Integer prodSold;
     private Integer prodDiscount;
-    private Byte image1;
-    private Byte image2;
-    private Byte image3;
+    private String image1;
+    private String image2;
+    private String image3;
     private Integer delivery;
     private String etc;
     private Integer point;
