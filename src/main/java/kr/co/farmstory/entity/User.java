@@ -30,6 +30,7 @@ public class User {
     private String addr2;
     private String regip;
     private String sms;
+    private String provider;
 
     @CreationTimestamp
     private LocalDateTime regDate;
