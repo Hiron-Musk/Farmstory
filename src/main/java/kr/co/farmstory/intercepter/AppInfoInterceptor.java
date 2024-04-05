@@ -15,7 +15,9 @@ public class AppInfoInterceptor implements HandlerInterceptor {
     @Override
     public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) throws Exception {
 
-        // 모든 요청에 대해 appInfo 모델 참조
-        modelAndView.addObject(appInfo);
+        if (modelAndView != null) {
+            // 모든 요청에 대해 appInfo 모델 참조
+            modelAndView.addObject(appInfo);
+        }
     }
 }

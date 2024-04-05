@@ -36,9 +36,9 @@ public class CommunityController {
         return "community/qna";
     }
 
-    @GetMapping("/community/fna")
+    @GetMapping("/community/faq")
     public String fna(){
-        return "community/fna";
+        return "community/faq";
     }
 
 

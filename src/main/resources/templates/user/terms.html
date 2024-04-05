@@ -1,21 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{/layout/defaultLayout}">
 <head>
-    <meta charset="UTF-8">
-    <title>팜스토리::약관</title>
-    <link rel="stylesheet" th:href="@{/css/style.css}"/>
-    <!-- 부트스트랩 CDN 추가 -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        /* 추가한 스타일 */
-        .footer-content {
-            text-align: center;
-            margin-top: 20px;
-        }
-    </style>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<style>
+    /* 추가한 스타일 */
+    .footer-content {
+        text-align: center;
+        margin-top: 20px;
+    }
+</style>
 </head>
-<body>
-<div id="container">
     <script>
 
         window.onload = function (){
@@ -36,25 +31,7 @@
             }
         }
     </script>
-    <header>
-        <a th:href="@{/index}" class="logo"><img th:src="@{/images/logo.png}" alt="로고"/></a>
-        <p>
-            <a th:href="@{/index}">HOME |</a>
-            <a th:href="@{/user/login}">로그인 |</a>
-            <a th:href="@{/user/terms}">회원가입 |</a>
-            <a href="./admin/">관리자 |</a>
-            <a href="#">고객센터</a>
-        </p>
-        <img th:src="@{/images/head_txt_img.png}" alt="3만원 이상 무료배송"/>
-
-        <ul class="gnb">
-            <li><a href="./introduction/hello.html">팜스토리소개</a></li>
-            <li><a href="./market/list.html"><img th:src="@{/images/head_menu_badge.png}" alt="30%"/>장보기</a></li>
-            <li><a href="./croptalk/story.html">농작물이야기</a></li>
-            <li><a href="./event/event.html">이벤트</a></li>
-            <li><a href="./community/notice.html">커뮤니티</a></li>
-        </ul>
-    </header>
+    <main layout:fragment="content">
     <div id="user">
         <!-- 약관 관련 이미지는 생략 -->
     </div>
@@ -95,23 +72,12 @@
             </div>
         </div>
     </div>
-</div>
 
-<footer>
-    <div class="footer-content">
-        <img th:src="@{/images/footer_logo.png}" alt="로고"/>
-        <p>
-            (주)팜스토리 / 사업자등록번호 123-45-67890 / 통신판매업신고 제 2013-팜스토리구-123호 / 벤처기업확인 서울지방중소기업청 제 012345678-9-01234호<br />
-            등록번호 팜스토리01234 (2013.04.01) / 발행인 : 홍길동<br />
-            대표 : 홍길동 / 이메일 : email@mail.mail / 전화 : 01) 234-5678 / 경기도 성남시 잘한다구 신난다동 345<br />
-            <em>Copyright(C)홍길동 All rights reserved.</em>
-        </p>
-    </div>
-</footer>
+
 
 <!-- 부트스트랩 JS CDN 추가 -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
+    </main>
 </html>
