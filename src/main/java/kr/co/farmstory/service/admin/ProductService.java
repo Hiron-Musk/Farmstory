@@ -27,19 +27,13 @@ public class ProductService {
     @Value("${images.upload.path}")
     private String imagesUploadPath;
 
-    public Product save(Product product,
-                        MultipartFile image1,
-                        MultipartFile image2,
-                        MultipartFile image3
+    public Product save(Product product, MultipartFile image
                         ) throws IOException {
 
         //사진 업로드 시스템 경로 설정
         //new FILE()  --> import java.io.File;
         String savePath = new File(imagesUploadPath).getAbsolutePath();
-        List<MultipartFile> images = new ArrayList<>();
-        images.add(image1);
-        images.add(image2);
-        images.add(image3);
+        /*
         for (MultipartFile image : images) {
             log.info("image={}", image);
 
@@ -55,7 +49,7 @@ public class ProductService {
             //사진 저장
             image.transferTo(saveFile);
         }
-
+*/
 
 
 

@@ -43,13 +43,12 @@ public class AdminController {
 
     @PostMapping("/product/register")
     public String register(@ModelAttribute Product product,
-                           @ModelAttribute MultipartFile image1
+                           @RequestParam MultipartFile image
                            ) {
         log.info("product={}", product.toString());
-        log.info("image1={}", image1.toString());
-//        log.info("images={}", images);
+        log.info("image_getOriginalFilename={}", image.getOriginalFilename());
 //        service.save(product, image1, image2, image3);
-        return null;
-//        return "redirect:/admin/product/list";
+//        return null;
+        return "/admin/product/register";
     }
 }
