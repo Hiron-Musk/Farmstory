@@ -1,7 +1,7 @@
 package kr.co.farmstory.controller.event;
 
 import kr.co.farmstory.entity.Article;
-import kr.co.farmstory.service.EventService;
+import kr.co.farmstory.service.event.EventService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
