@@ -1,4 +1,4 @@
-package kr.co.farmstory.service;
+package kr.co.farmstory.service.event;
 
 import kr.co.farmstory.entity.Article;
 import kr.co.farmstory.repository.article.ArticleRepository;
