@@ -11,7 +11,6 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.mail.javamail.JavaMailSender;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.concurrent.ThreadLocalRandom;
@@ -22,12 +21,11 @@ import java.util.concurrent.ThreadLocalRandom;
 public class UserService {
 
     private final UserMapper userMapper;
-    private final PasswordEncoder passwordEncoder;
 
     // JavaMailSender 주입
     private final JavaMailSender javaMailSender;
 
-    public TermsDTO selectTerms(){
+    public TermsDTO selectTerms() {
         return userMapper.selectTerms();
     }
 
@@ -35,13 +33,12 @@ public class UserService {
         return userMapper.selectCountUser(type, value);
     }
 
-    public void insertUser(UserDTO userDTO){
+    public void insertUser(UserDTO userDTO) {
 
-        String encoded = passwordEncoder.encode(userDTO.getPass());
-        userDTO.setPass(encoded);
 
         userMapper.insertUser(userDTO);
     }
+
     /*
         - build.gradle 파일에 spring-boot-starter-mail 의존성 추가 할것
         - application.yml 파일 spring email 설정 추가
