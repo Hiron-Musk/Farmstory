@@ -1,6 +1,7 @@
 package kr.co.farmstory.dto;
 
 import lombok.*;
+import org.springframework.web.multipart.MultipartFile;
 
 /**
  * 24/4/2수정
@@ -19,11 +20,10 @@ public class ProductDTO {
     private int prodPrice;
     private int prodSold;
     private int prodDiscount;
-    private String image1;
-    private String image2;
-    private String image3;
+    private MultipartFile image1;
+    private MultipartFile image2;
+    private MultipartFile image3;
     private int delivery;
     private String etc;
     private int point;
-
 }

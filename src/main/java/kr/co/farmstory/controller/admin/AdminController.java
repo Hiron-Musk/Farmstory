@@ -1,8 +1,10 @@
 package kr.co.farmstory.controller.admin;
 
+import kr.co.farmstory.dto.ProductDTO;
 import kr.co.farmstory.entity.Product;
 import kr.co.farmstory.service.admin.ProductService;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.log4j.Log4j2;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -14,7 +16,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
 
-@Slf4j
+@Log4j2
 @Controller
 @RequiredArgsConstructor
 @RequestMapping("/admin")
@@ -42,14 +44,10 @@ public class AdminController {
         return "/admin/product/register";
     }
 
-    /**
-     * @param product product 엔티티를 받음
-     * @param image   templates/admin/product/register.html에서 <input type="file" name="image">
-     *                개별로 전송하는 MultipartFile을 넘길때는 name="" 을 같게해서 넘긴다.
-     */
     @PostMapping("/product/register")
-    public String register(@ModelAttribute Product product, MultipartFile[] image) {
-        service.save(product, image);
+    public String register(ProductDTO productDTO) {
+        log.info(productDTO);
+        service.save(productDTO);
         return "redirect:/admin/product/list";
     }
 }
