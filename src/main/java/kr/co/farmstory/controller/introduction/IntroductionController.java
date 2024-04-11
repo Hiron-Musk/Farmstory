@@ -8,12 +8,12 @@ public class IntroductionController {
 
     @GetMapping("/introduction/direction")
     public String direction(){
-        return "introduction/direction";
+        return "/introduction/direction";
     }
 
     @GetMapping("/introduction/hello")
     public String hello(){
-        return "introduction/hello";
+        return "/introduction/hello";
     }
 
 }

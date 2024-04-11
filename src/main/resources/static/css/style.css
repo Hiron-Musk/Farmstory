@@ -106,138 +106,6 @@ footer > p > em {
     font-weight: bold;
 }
 
-/* user/login.html */
-
-#user > .login {
-    position: relative;
-    width: 360px;
-    height: auto;
-    border: 1px solid #cfded8;
-    box-sizing: border-box;
-    margin: 100px auto;
-}
-
-#user > .login > form {}
-#user > .login > form > table {
-    margin-left: 52px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-#user > .login > form > table tr {}
-#user > .login > form > table tr > td {}
-#user > .login > form > table img {width: 20px;}
-#user > .login > form > table input {
-    width: 162px;
-    height: 22px;
-    margin-left: 6px;
-    margin-bottom: 4px;
-    border: 1px solid #e4eaec;
-    background: #f7f7f7;
-}
-#user > .login > form > .btnLogin {
-    position: absolute;
-    right: 50px;
-    top: 30px;
-    width: 60px;
-    height: 52px;
-    background-color: #fdfdfd;
-    border: 1px solid #bebebe;
-}
-#user > .login > form > label {
-    position: absolute;
-    left: 78px;
-    top: 90px;
-}
-
-#user > .login > form > label input {
-    vertical-align: text-bottom;
-    margin-right: 2px;
-}
-
-#user > .login > div {
-    width: 100%;
-    height: 104px;
-    background: #f5f6fa;
-    border-top: 1px solid #cfded8;
-    margin-top: 20px;
-    padding: 20px;
-    box-sizing: border-box;
-}
-#user > .login > div > h3 {}
-#user > .login > div > p {
-    margin: 10px 0;
-}
-#user > .login > div > a {
-    float: right;
-}
-
-/* 회원가입 */
-#user > .register {
-    width: 600px;
-    height: auto;
-    margin: 60px auto;
-    overflow: hidden;
-}
-#user > .register > form {}
-#user > .register table {
-    width: 100%;
-    border-collapse: collapse;
-    border-spacing: 0;
-    border-top: 2px solid #111;
-    margin-bottom: 10px;
-}
-#user > .register table caption {
-    text-align: left;
-    padding: 10px 0;
-    font-weight: bold;
-    box-sizing: border-box;
-}
-#user > .register table tr {}
-#user > .register table tr > td {
-    padding: 6px 12px;
-    border: 1px solid #e9e9e9;
-    box-sizing: border-box;
-}
-#user > .register table tr > td:nth-child(1) {
-    width: 105px;
-    background: #f5f8f9;
-}
-
-#user > .register table tr .nickInfo {margin-bottom: 6px;}
-#user > .register table input {
-    width: 162px;
-    height: 22px;
-    border: 1px solid #e4eaec;
-    background: #f7f7f7;
-    text-indent: 6px;
-}
-
-#user > .register table input[name=addr1] {
-    display: block;
-    width: 360px;
-    margin: 4px 0;
-}
-#user > .register table input[name=addr2] {
-    display: block;
-    width: 360px;
-}
-#user > .register table button {
-    border: none;
-    vertical-align: bottom;
-}
-
-#user > .register > form > div {
-    float: right;
-    margin-top: 10px;
-}
-
-#user > .register > form .auth {
-    display: none;
-    margin-top: 6px;
-}
-
 /* 메인(index) */
 main {
     width: 100%;
@@ -284,7 +152,7 @@ main > .slider > .banner > img:nth-child(3) {
 }
 
 
-.bx-wrapper {            
+.bx-wrapper {
     box-shadow: none;
     border: none;
     background: #fff;
@@ -342,7 +210,7 @@ main > .latest table tr > td > a{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    line-height: 18px;  
+    line-height: 18px;
     color: #6a6a6a;
 }
 
@@ -440,7 +308,7 @@ main > .info > div > .account {
     padding: 10px;
 }
 
-#tabs .txt > li {    
+#tabs .txt > li {
     border-bottom: 1px solid #d1d1d1;
     line-height: 26px;
 }
@@ -497,7 +365,7 @@ main > .info > div > .account {
 #sub > section > aside > ul > li {
     width: 100%;
     height: 29px;
-    margin-bottom: 6px;            
+    margin-bottom: 6px;
 }
 #sub > section > aside > ul a {
     display: block;
@@ -534,7 +402,7 @@ main > .info > div > .account {
     color: #8c8c8c;
     padding-left: 20px;
     box-sizing: border-box;
-    background-image: url(../img/sub_page_nav_ico.gif);
+    background-image: url(../images/sub_page_nav_ico.gif);
     background-repeat: no-repeat;
     background-position: 10px;
 }
@@ -590,8 +458,8 @@ main > .info > div > .account {
     border-bottom: 1px solid #d1dee2;
 }
 
-#sub > .market > .list > table tr > td {            
-    padding: 10px;            
+#sub > .market > .list > table tr > td {
+    padding: 10px;
     box-sizing: border-box;
     color: #111;
     text-align: center;
@@ -605,7 +473,7 @@ main > .info > div > .account {
 
 #sub > .market > .list > table .price > strong {
     color: #111;
-    font-weight: bold;    
+    font-weight: bold;
 }
 #sub > .market > .list > table .price > strong::after {
     content: '원';
@@ -615,7 +483,7 @@ main > .info > div > .account {
     color: #777;
 }
 #sub > .market > .list > table .price > del::after {
-    content: '원';    
+    content: '원';
 }
 
 #sub > .market > .list > .paging {
@@ -655,12 +523,12 @@ main > .info > div > .account {
     border-bottom: 2px solid #e7e7e7;
 }
 
-#sub > .market > .view > .basic > table em {            
+#sub > .market > .view > .basic > table em {
     color: #777;
 }
 #sub > .market > .view > .basic > table .total {
     font-weight: bold;
-    color: #c20a0a;        
+    color: #c20a0a;
 }
 
 #sub > .market > .view > .basic > .btnOrder {
@@ -674,7 +542,7 @@ main > .info > div > .account {
 #sub > .market > .view > .delivery {}
 #sub > .market > .view > .exchange table {
     width: 100%;
-    border-collapse: collapse;                     
+    border-collapse: collapse;
 }
 #sub > .market > .view > .exchange table tr {}
 #sub > .market > .view > .exchange table td {
@@ -714,9 +582,9 @@ input[type=number]{
     width: 60px;
     outline: none;
 }
-input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
-    opacity: 1;         
+    opacity: 1;
 }
 
 
@@ -744,7 +612,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 #sub > .market > .cart > table tr > td {
-    padding: 10px;            
+    padding: 10px;
     box-sizing: border-box;
     color: #777;
     text-align: center;
@@ -764,7 +632,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 #sub > .market > .cart > table tr > td > strong {
     color: #111;
-    font-weight: bold;            
+    font-weight: bold;
 }
 #sub > .market > .cart > input[name=del] {
     margin-top: 10px;
@@ -776,8 +644,8 @@ input[type=number]::-webkit-outer-spin-button {
 
 #sub > .market > .cart > .info {
     float: right;
-    width: 40%;  
-    margin-top: 10px;  
+    width: 40%;
+    margin-top: 10px;
     position: relative;
     overflow: hidden;
     border: 1px solid #d7d7d7;
@@ -786,7 +654,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 #sub > .market > .cart > .info > table {
     float: right;
-    width: 100%;    
+    width: 100%;
     margin-left: 16px;
     border-top: 1px solid #111;
     border-bottom: 1px solid #111;
@@ -804,10 +672,10 @@ input[type=number]::-webkit-outer-spin-button {
 }
 #sub > .market > .cart > .info > table .total {
     font-weight: bold;
-    color: #c20a0a;        
+    color: #c20a0a;
 }
 
-#sub > .market > .cart > .info > .btnOrder {    
+#sub > .market > .cart > .info > .btnOrder {
     clear: both;
     float: right;
     width: 100%;
@@ -815,7 +683,7 @@ input[type=number]::-webkit-outer-spin-button {
     padding: 10px;
     border: none;
     background-color: #960d1a;
-    color: white;    
+    color: white;
 }
 
 #sub > .market > .order {}
@@ -849,7 +717,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 #sub > .market > .order > table tr > td {
-    padding: 10px;            
+    padding: 10px;
     box-sizing: border-box;
     color: #777;
     text-align: center;
@@ -868,7 +736,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 #sub > .market > .order > table tr > td > strong {
     color: #111;
-    font-weight: bold;            
+    font-weight: bold;
 }
 
 
@@ -883,7 +751,7 @@ input[type=number]::-webkit-outer-spin-button {
 #sub > .market > .order > .shipping table {
     width: 100%;
     border-collapse: collapse;
-    border-top: 1px solid #be0808;            
+    border-top: 1px solid #be0808;
 }
 #sub > .market > .order > .shipping table tr {}
 #sub > .market > .order > .shipping table td {
@@ -917,7 +785,7 @@ input[type=number]::-webkit-outer-spin-button {
     width: 320px;
     height: 60px;
     border: 1px solid #d7d7d7;
-    resize: none;            
+    resize: none;
     outline: none;
 }
 
@@ -933,7 +801,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 #sub > .market > .order > .final > table {
     float: right;
-    width: 100%;    
+    width: 100%;
     margin-left: 16px;
     border-top: 1px solid #111;
     border-bottom: 1px solid #111;
@@ -951,10 +819,10 @@ input[type=number]::-webkit-outer-spin-button {
 }
 #sub > .market > .order > .final > table .total {
     font-weight: bold;
-    color: #c20a0a;        
+    color: #c20a0a;
 }
 
-#sub > .market > .order > .final > .btnOrder {    
+#sub > .market > .order > .final > .btnOrder {
     clear: both;
     float: right;
     width: 100%;
@@ -962,14 +830,16 @@ input[type=number]::-webkit-outer-spin-button {
     padding: 10px;
     border: none;
     background-color: #960d1a;
-    color: white;    
+    color: white;
 }
 
 #btnZip {
-    width: 75px;
-    height: 21px;
+    width: 91px;
+    height: 20px;
+    background-image: url('../images/btn_post_search.gif');
     font-size: 0;
     border: none;
+    margin-left: 4px;
     vertical-align: middle;
 }
 
@@ -991,47 +861,6 @@ input[type=number]::-webkit-outer-spin-button {
 #sub > .event .lnb > li:nth-child(1) > a {background-image: url('../images/sub_cate4_lnb1.png');}
 #sub > .event .lnb > li:nth-child(1) > a:hover {background-image: url('../images/sub_cate4_lnb1_ov.png');}
 #sub > .event .lnb > li:nth-child(1).on > a {background-image: url('../images/sub_cate4_lnb1_ov.png');}
-/* 테이블 스타일링 */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px; /* 테이블 아래 여백 추가 */
-}
-
-/* 테이블 헤더 스타일링 */
-th {
-    background-color: #f2f2f2;
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: center; /* 헤더 텍스트 가운데 정렬 */
-}
-
-/* 테이블 셀 스타일링 */
-td {
-    border: 1px solid #ddd;
-    padding: 8px;
-}
-
-/* 홀수 행 배경색 설정 */
-tbody tr:nth-child(odd) {
-    background-color: #f9f9f9;
-}
-
-/* 검색 폼 스타일링 */
-#searchForm {
-    margin-bottom: 20px; /* 검색 폼 아래 여백 추가 */
-}
-
-#searchForm select,
-#searchForm input[type="text"],
-#searchForm button {
-    margin-right: 10px; /* 입력 필드와 버튼 사이 여백 추가 */
-    margin-bottom: 10px; /* 입력 필드 아래 여백 추가 */
-}
-
-#searchForm label {
-    margin-right: 5px; /* 라디오 버튼과 라벨 사이 여백 추가 */
-}
 
 /* 커뮤니티 */
 #sub > .community .lnb > li:nth-child(1) > a {background-image: url('../images/sub_cate5_lnb1.png');}
@@ -1053,12 +882,12 @@ tbody tr:nth-child(odd) {
 
 /* user */
 #sub > .user > article {
-	float: none;
-	width: 100%;
+    float: none;
+    width: 100%;
     min-height: auto;
-	padding: 0 40px;
+    padding: 0 40px;
 }
 
 #sub > .user > article > nav {
-	width: 100%;
+    width: 100%;
 }
