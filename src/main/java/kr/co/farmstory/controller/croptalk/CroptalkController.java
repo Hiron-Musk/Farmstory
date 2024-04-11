@@ -8,16 +8,16 @@ public class CroptalkController {
 
     @GetMapping("/croptalk/grow")
     public String grow(){
-        return "croptalk/grow";
+        return "/croptalk/grow";
     }
 
     @GetMapping("/croptalk/school")
     public String school(){
-        return "croptalk/school";
+        return "/croptalk/school";
     }
 
     @GetMapping("/croptalk/story")
     public String story(){
-        return "croptalk/story";
+        return "/croptalk/story";
     }
 }

@@ -16,29 +16,29 @@ public class CommunityController {
     @GetMapping("/community/notice")
     public String notice(){
 
-        return "community/notice";
+        return "/community/notice";
     }
 
     @GetMapping("/community/menu")
     public String menu(){
 
 
-        return "community/menu";
+        return "/community/menu";
     }
 
     @GetMapping("/community/chef")
     public String chef(){
-        return "community/chef";
+        return "/community/chef";
     }
 
     @GetMapping("/community/qna")
     public String qna(){
-        return "community/qna";
+        return "/community/qna";
     }
 
     @GetMapping("/community/faq")
     public String fna(){
-        return "community/faq";
+        return "/community/faq";
     }
 
 

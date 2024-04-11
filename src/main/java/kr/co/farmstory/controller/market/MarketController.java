@@ -8,22 +8,22 @@ public class MarketController {
 
     @GetMapping("/market/list")
     public String list(){
-        return "market/list";
+        return "/market/list";
     }
 
     @GetMapping("/market/cart")
     public String cart(){
-        return "market/cart";
+        return "/market/cart";
     }
 
     @GetMapping("/market/order")
     public String order(){
-        return "market/order";
+        return "/market/order";
     }
 
     @GetMapping("/market/view")
     public String view(){
-        return "market/view";
+        return "/market/view";
     }
 
 }
