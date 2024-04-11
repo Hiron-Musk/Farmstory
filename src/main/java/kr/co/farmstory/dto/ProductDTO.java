@@ -1,5 +1,6 @@
 package kr.co.farmstory.dto;
 
+import kr.co.farmstory.entity.Product;
 import lombok.*;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -13,17 +14,31 @@ import org.springframework.web.multipart.MultipartFile;
 @NoArgsConstructor
 @Builder
 public class ProductDTO {
-    private int prodNo;
-    private int cateNo;
+    private Long prodNo;
+    private String cate;
     private String prodName;
-    private int prodStock;
-    private int prodPrice;
-    private int prodSold;
-    private int prodDiscount;
+    private Integer prodStock;
+    private Integer prodPrice;
+    private Integer prodSold;
+    private Integer prodDiscount;
     private MultipartFile image1;
     private MultipartFile image2;
     private MultipartFile image3;
-    private int delivery;
+    private Integer delivery;
     private String etc;
-    private int point;
+    private Integer point;
+    private String createDate;
+
+    public Product toEntity() {
+        return Product.builder()
+                .prodName(prodName)
+                .cate(cate)
+                .prodPrice(prodPrice)
+                .point(point)
+                .prodDiscount(prodDiscount)
+                .delivery(delivery)
+                .prodStock(prodStock)
+                .etc(etc)
+                .build();
+    }
 }

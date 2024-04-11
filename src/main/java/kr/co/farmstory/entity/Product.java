@@ -11,11 +11,12 @@ import lombok.*;
 @Builder
 @Entity
 @Table(name = "products")
-public class Product {
+public class Product extends BaseTimeEntity {
 
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long prodNo;
-    private Integer cateNo;
+    private String cate;
     private String prodName;
     private Integer prodStock;
     private Integer prodPrice;
@@ -27,4 +28,6 @@ public class Product {
     private Integer delivery;
     private String etc;
     private Integer point;
+
+
 }
