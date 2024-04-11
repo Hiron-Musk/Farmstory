@@ -50,12 +50,12 @@
                         </tr>
                         <tr th:each="product : ${products}">
                             <td><input type="checkbox" name=""/></td>
-                            <td><img th:src="@{/images/admin/images/sample_item1.jpg}" class="thumb" alt="샘플1"></td>
+                            <td><img th:src="@{/${product.getImage1}}" class="thumb" alt="샘플1"></td>
                             <td th:text="${product.prodName}">사과 500g</td>
-                            <td th:text="${product.cateNo}">과일</td>
+                            <td th:text="${product.cate}">과일</td>
                             <td th:text="${product.prodPrice}">4,000원</td>
                             <td th:text="${product.prodStock}">100</td>
-                            <td>2023-01-01</td>
+                            <td th:text="${#temporals.format(product.getCreateDate, 'yyyy-MM-dd')}">2023-01-01</td>
                         </tr>
                     </table>
 
