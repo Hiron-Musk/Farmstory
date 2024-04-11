@@ -37,7 +37,7 @@
                 </nav>
 
                 <article>
-                    <form th:action method="post" enctype="multipart/form-data">
+                    <form th:action="@{/admin/product/register}" method="post" enctype="multipart/form-data">
                         <table border="0">
                             <tr>
                                 <td>상품명</td>
@@ -95,15 +95,15 @@
                                 <td>
                                     <p>
                                         <span>상품목록 이미지(약 120 x 120)</span>
-                                        <input type="file" name="image"/>
+                                        <input type="file" name="image1"/>
                                     </p>
                                     <p>
                                         <span>기본정보 이미지(약 240 x 240)</span>
-                                        <input type="file" name="image"/>
+                                        <input type="file" name="image2"/>
                                     </p>
                                     <p>
                                         <span>상품설명 이미지(약 750 x Auto)</span>
-                                        <input type="file" name="image"/>
+                                        <input type="file" name="image3"/>
                                     </p>
                                 </td>
                             </tr>
